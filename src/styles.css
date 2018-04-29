@@ -1,0 +1,593 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+html, body {
+  height: 100%; }
+
+body {
+  background: #2e98be url("assets/images/topo-overlay.png") bottom center no-repeat;
+  transition: 2s; }
+
+.overlay {
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  z-index: -1;
+  transition: 2s; }
+
+.overlay-sunny {
+  background-image: url("assets/images/overlay-sunny.png");
+  opacity: 0.5; }
+
+.overlay-partly-cloudy {
+  background-image: url("assets/images/overlay-partly-cloudy.jpg");
+  opacity: 0.5; }
+
+.overlay-cloudy {
+  background-image: url("assets/images/overlay-cloudy.jpg");
+  opacity: 0.75; }
+
+.overlay-stars {
+  background-image: url("assets/images/overlay-stars-blur.jpg");
+  opacity: 0.9; }
+
+.welcome {
+  margin: auto;
+  color: rgba(255, 255, 255, 0.9);
+  text-align: center;
+  max-width: 800px; }
+  @media (min-width: 1200px) {
+    .welcome {
+      padding-top: 40px; } }
+  .welcome h4 {
+    font-size: 125%;
+    line-height: 1.5; }
+    @media (min-width: 1200px) {
+      .welcome h4 {
+        font-size: 175%; } }
+  .welcome img {
+    margin: 0 0 -20px 80px;
+    max-width: 40px;
+    display: block; }
+    @media (min-width: 1200px) {
+      .welcome img {
+        margin: 0 0 -20px 80px;
+        max-width: 100px; } }
+
+h1 {
+  padding: 20px 0;
+  font-size: 50px;
+  font-weight: 100;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  color: #fff; }
+  @media (min-width: 768px) {
+    h1 {
+      padding: 40px 0;
+      font-size: 80px; } }
+  @media (min-width: 1200px) {
+    h1 {
+      padding: 80 0;
+      font-size: 100px; } }
+  h1 strong {
+    font-weight: 600; }
+
+h2 {
+  text-align: center;
+  color: #fff; }
+
+h3 {
+  font-size: 125%;
+  text-align: center;
+  line-height: 1.5;
+  color: #fff; }
+
+.button {
+  text-align: center; }
+
+.button-holder {
+  padding: 20px 0; }
+  @media (min-width: 768px) {
+    .button-holder {
+      padding: 40px; } }
+  @media (min-width: 1200px) {
+    .button-holder {
+      padding: 80px; } }
+
+.btn-start {
+  padding: 18px 50px 10px 50px;
+  background: #8cc6db;
+  font-size: 24px;
+  color: #fff;
+  border-radius: 40px;
+  border: 2px solid rgba(255, 255, 255, 0.75);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+  transition: .5s; }
+  .btn-start.btn-disabled {
+    opacity: 0.25; }
+  .btn-start:hover {
+    background-color: #82adc0;
+    box-shadow: 5px 5px 40px rgba(0, 0, 0, 0.15);
+    color: #fff; }
+
+.btn-map {
+  padding: 5px 20px 5px 20px;
+  background: #8cc6db;
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.15);
+  transition: .5s; }
+  .btn-map.btn-disabled {
+    opacity: 0.25; }
+  .btn-map:hover {
+    background-color: #82adc0;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.15);
+    color: #fff; }
+
+.select-band {
+  margin: 20px 0;
+  padding: 20px 0;
+  background: #fff;
+  text-align: center; }
+  @media (min-width: 768px) {
+    .select-band {
+      margin: 40px 0;
+      padding: 40px 0; } }
+  @media (min-width: 1200px) {
+    .select-band {
+      margin: 80px 0;
+      padding: 40px 0; } }
+  .select-band ul, .select-band table {
+    margin: auto;
+    margin-bottom: 0;
+    text-align: center; }
+  .select-band li, .select-band td {
+    width: 49%; }
+    @media (min-width: 768px) {
+      .select-band li, .select-band td {
+        width: 19%; } }
+  .select-band a {
+    display: block; }
+  .select-band .explorer a {
+    padding-top: 110px;
+    background:  center 20px no-repeat;
+    background-size: 80px 80px;
+    display: block; }
+    .select-band .explorer a:after {
+      margin: auto;
+      margin-top: 10px;
+      display: block;
+      width: 98px;
+      height: 21.5px;
+      content: " "; }
+  .select-band .tn-river a {
+    padding-top: 110px;
+    background: url("assets/images/icon-river-trek.png") center 20px no-repeat;
+    background-size: 80px 80px; }
+    .select-band .tn-river a:after {
+      margin: auto;
+      margin-top: 10px;
+      display: block;
+      width: 98px;
+      height: 21.5px;
+      background: url("assets/images/icon-river-trek-shadow.png") bottom center no-repeat;
+      background-size: 98px 21.5px;
+      content: " "; }
+  .select-band .nuclear a {
+    padding-top: 110px;
+    background: url("assets/images/icon-nuclear.png") center 20px no-repeat;
+    background-size: 80px 80px; }
+    .select-band .nuclear a:after {
+      margin: auto;
+      margin-top: 10px;
+      display: block;
+      width: 98px;
+      height: 21.5px;
+      background: url("assets/images/icon-nuclear-shadow.png") bottom center no-repeat;
+      background-size: 98px 21.5px;
+      content: " "; }
+  .select-band .wind a {
+    padding-top: 110px;
+    background: url("assets/images/icon-wind.png") center 20px no-repeat;
+    background-size: 80px 80px; }
+    .select-band .wind a:after {
+      margin: auto;
+      margin-top: 10px;
+      display: block;
+      width: 98px;
+      height: 21.5px;
+      background: url("assets/images/icon-wind-shadow.png") bottom center no-repeat;
+      background-size: 98px 21.5px;
+      content: " "; }
+  .select-band .solar a {
+    padding-top: 110px;
+    background: url("assets/images/icon-solar.png") center 20px no-repeat;
+    background-size: 80px 80px; }
+    .select-band .solar a:after {
+      margin: auto;
+      margin-top: 10px;
+      display: block;
+      width: 98px;
+      height: 21.5px;
+      background: url("assets/images/icon-solar-shadow.png") bottom center no-repeat;
+      background-size: 98px 21.5px;
+      content: " "; }
+  .select-band li a,
+  .select-band td a {
+    padding: 20px;
+    font-weight: 600;
+    color: #939598;
+    text-transform: uppercase;
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+    transition: .5s; }
+    .select-band li a.active, .select-band li a:hover,
+    .select-band td a.active,
+    .select-band td a:hover {
+      background-color: #eee;
+      text-decoration: none;
+      color: rgba(0, 0, 0, 0.75); }
+
+.select-band-contents {
+  margin-top: 0;
+  padding: 0; }
+  .select-band-contents li, .select-band-contents td {
+    padding: 0;
+    min-width: 150px; }
+    @media (min-width: 768px) {
+      .select-band-contents li, .select-band-contents td {
+        padding: 20px 0;
+        width: 16%; } }
+    .select-band-contents li a, .select-band-contents td a {
+      padding-top: 60px;
+      background-size: 57px 41px;
+      background-position: center 20px;
+      background-repeat: no-repeat;
+      text-transform: none;
+      color: #214684;
+      display: block; }
+      @media (min-width: 768px) {
+        .select-band-contents li a, .select-band-contents td a {
+          padding-top: 100px;
+          background-size: 114px 82px; } }
+      @media (min-width: 1200px) {
+        .select-band-contents li a, .select-band-contents td a {
+          padding-top: 200px;
+          background-size: 228px 164px; } }
+      @media (max-width: 767px) {
+        .select-band-contents li a span, .select-band-contents td a span {
+          font-size: 90%; } }
+  .select-band-contents .trek-contents a {
+    background-image: url("assets/images/icon-river-trek-contents.png"); }
+  .select-band-contents .river-navigation a {
+    background-image: url("assets/images/icon-river-navigation.png"); }
+  .select-band-contents .hydropower a {
+    background-image: url("assets/images/icon-hydropower.png"); }
+  .select-band-contents .watershed a {
+    background-image: url("assets/images/icon-watershed.png"); }
+  .select-band-contents .history a {
+    background-image: url("assets/images/icon-history.png"); }
+  .select-band-contents .water-withdrawal a {
+    background-image: url("assets/images/icon-water-withdrawal.png"); }
+
+.river-map .select-band-contents {
+  padding: 0; }
+
+.select-band-map td a,
+.select-band-map li a {
+  padding-top: 60px;
+  background-size: 57px 41px; }
+  @media (min-width: 768px) {
+    .select-band-map td a,
+    .select-band-map li a {
+      padding-top: 100px;
+      background-size: 114px 82px; } }
+
+.backpack .select-band-map li a {
+  padding-top: 0 !important;
+  background: none !important; }
+
+.level-select {
+  margin-bottom: 40px;
+  text-align: center; }
+  .level-select label {
+    margin: 0 20px 10px 20px;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.5);
+    transition: .5s;
+    cursor: pointer;
+    line-height: 1; }
+    @media (min-width: 1200px) {
+      .level-select label {
+        margin: 0 20px; } }
+    .level-select label .jcf-radio {
+      vertical-align: top; }
+    .level-select label.jcf-label-active, .level-select label:hover {
+      color: #114777; }
+
+.level-select-trek {
+  padding: 40px 0 0 0;
+  text-align: left;
+  margin: auto;
+  max-width: 1000px;
+  padding-left: 40px; }
+  @media (min-width: 768px) {
+    .level-select-trek {
+      padding-left: 80px; } }
+  @media (min-width: 992px) {
+    .level-select-trek {
+      padding-left: 100px; } }
+  .level-select-trek label {
+    margin: 10px 0; }
+
+.slider-container {
+  padding: 20px 40px;
+  position: relative; }
+  @media (min-width: 1200px) {
+    .slider-container {
+      padding: 40px;
+      min-width: 400px;
+      float: right; } }
+
+#slider {
+  margin: 0 0 40px 0;
+  background: #33a7da;
+  border: none;
+  height: 10px;
+  text-align: left;
+  cursor: pointer; }
+  #slider .ui-slider-handle {
+    background: #fff;
+    border: none; }
+    #slider .ui-slider-handle:focus {
+      outline: 0; }
+
+.slider-labels {
+  margin: 20px 0 0 0;
+  height: 35px; }
+  .slider-labels .icon {
+    margin: 0 0 10px 0;
+    font-size: 24px;
+    position: absolute;
+    left: calc(0% - 15px); }
+  .slider-labels a:nth-child(2) .icon {
+    left: calc(33.333% - 15px); }
+  .slider-labels a:nth-child(3) .icon {
+    left: calc(66.667% - 15px); }
+  .slider-labels a:nth-child(4) .icon {
+    left: calc(100% - 15px); }
+  .slider-labels a {
+    color: rgba(255, 255, 255, 0.75); }
+    .slider-labels a:active, .slider-labels a:focus, .slider-labels a:hover {
+      color: #fff;
+      text-decoration: none; }
+
+.tooltip-inner {
+  margin: 0 -40px;
+  background: #114777;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25); }
+
+.tooltip.bottom .tooltip-arrow {
+  border-bottom-color: #114777; }
+
+.tooltip.in {
+  opacity: 1; }
+
+.bottom-navigation {
+  margin-top: 120px;
+  color: rgba(255, 255, 255, 0.8); }
+  @media (min-width: 768px) {
+    .bottom-navigation {
+      position: absolute;
+      width: 100%;
+      bottom: 40px; } }
+  .bottom-navigation strong {
+    font-weight: bold; }
+  .bottom-navigation ul {
+    text-align: center; }
+    @media (min-width: 768px) {
+      .bottom-navigation ul {
+        text-align: left; } }
+    .bottom-navigation ul a {
+      color: rgba(255, 255, 255, 0.8);
+      transition: 0.5s; }
+      .bottom-navigation ul a:hover {
+        color: #fff;
+        text-decoration: none; }
+  .bottom-navigation img {
+    margin: auto;
+    width: 150px;
+    display: block; }
+    @media (min-width: 768px) {
+      .bottom-navigation img {
+        float: right; } }
+
+img.compass {
+  position: absolute;
+  bottom: -60px;
+  right: 40%;
+  width: 400px;
+  opacity: 0.25;
+  z-index: -2; }
+
+.trek-contents .trek-start-message a img.backpack-icon {
+  position: absolute;
+  top: 150px;
+  left: 0;
+  width: 50px;
+  opacity: 0.75; }
+  @media (min-width: 768px) {
+    .trek-contents .trek-start-message a img.backpack-icon {
+      top: 250px;
+      width: 75px; } }
+  @media (min-width: 768px) {
+    .trek-contents .trek-start-message a img.backpack-icon {
+      top: 350px; } }
+  .trek-contents .trek-start-message a img.backpack-icon:hover {
+    opacity: 1; }
+
+.slider-container {
+  padding: 40px 0; }
+
+.swiper-slide {
+  background: #fff;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+  transition: .5s; }
+  .swiper-slide:hover {
+    background-color: #eee;
+    cursor: pointer;
+    box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.35); }
+  .swiper-slide h4 {
+    margin: 0;
+    font-weight: 700;
+    color: #163c65; }
+  .swiper-slide p {
+    margin-bottom: 20px;
+    color: #555; }
+
+.backpack-slides {
+  margin-bottom: 5px; }
+  .backpack-slides .swiper-slide {
+    padding: 10px; }
+    @media (min-width: 768px) {
+      .backpack-slides .swiper-slide {
+        padding: 20px; } }
+  .backpack-slides .text {
+    height: 100px; }
+    @media (min-width: 768px) {
+      .backpack-slides .text {
+        height: 75px; } }
+  .backpack-slides img {
+    margin: auto;
+    height: 100px; }
+
+.user-slides .swiper-slide {
+  padding: 5px;
+  position: relative; }
+
+.user-slides .text {
+  padding: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; }
+
+.user-slides h4,
+.user-slides p {
+  color: #fff; }
+
+#standalone {
+  transform: scale(0.8); }
+
+.popup_visible #standalone {
+  transform: scale(1); }
+
+.white-popup {
+  margin: 20px auto 20px auto;
+  background: url("assets/images/hydropower-bg.jpg") top center no-repeat;
+  background-size: cover;
+  position: relative;
+  width: auto;
+  max-width: 1200px; }
+  .white-popup .side-panel {
+    padding: 20px;
+    background: #163c65;
+    background: rgba(7, 40, 55, 0.75);
+    color: #fff;
+    position: relative; }
+    .white-popup .side-panel h3 {
+      margin-bottom: 5px;
+      text-align: left; }
+    .white-popup .side-panel .text {
+      padding: 40px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%; }
+    .white-popup .side-panel img {
+      margin-bottom: 40px;
+      padding-right: 60px; }
+  .white-popup .featured-content {
+    padding: 20px; }
+    @media (min-width: 768px) {
+      .white-popup .featured-content {
+        padding: 40px; } }
+    .white-popup .featured-content h2, .white-popup .featured-content h3 {
+      margin: 0;
+      text-align: left;
+      text-transform: uppercase; }
+    .white-popup .featured-content h2 {
+      font-size: 40px;
+      font-weight: 300; }
+      @media (min-width: 768px) {
+        .white-popup .featured-content h2 {
+          font-size: 60px; } }
+    .white-popup .featured-content h3 {
+      margin-bottom: 30px;
+      font-size: 15px; }
+      @media (min-width: 768px) {
+        .white-popup .featured-content h3 {
+          margin-bottom: 15px;
+          font-size: 18px; } }
+  .white-popup iframe {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25); }
+
+.acquatic-dialog {
+  background-image: url("assets/images/acquatic-bg.jpg"); }
+
+.sturgeon-dialog {
+  background-image: url("assets/images/sturgeon-bg.jpg"); }
+
+#map {
+  background: #207698;
+  background: linear-gradient(to right, #105c89, #207698);
+  position: absolute;
+  top: 115px;
+  bottom: 0;
+  width: 100%; }
+  @media (min-width: 768px) {
+    #map {
+      top: 165px; } }
+
+.mapboxgl-popup {
+  opacity: 0.9; }
+
+.mapboxgl-popup-content {
+  padding: 20px;
+  font-size: 150%;
+  box-shadow: 5px 5px 40px rgba(0, 0, 0, 0.25);
+  background: #02212d; }
+  @media (min-width: 768px) {
+    .mapboxgl-popup-content {
+      padding: 10px 40px 40px 40px; } }
+
+.mapboxgl-popup-content h3 {
+  font-weight: 100;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.9); }
+  @media (min-width: 768px) {
+    .mapboxgl-popup-content h3 {
+      font-size: 30px; } }
+
+.mapboxgl-popup-content h4 {
+  margin-bottom: 25px;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 16px;
+  font-weight: 400; }
+  .mapboxgl-popup-anchor-bottom .mapboxgl-popup-tip {
+    border-top-color: #02212d; }
+
+  .mapboxgl-popup-close-button {
+    color: rgba(255, 255, 255, 0.5); }
+
+  footer {
+    margin-top: 3em; }
+
+  .glyphicon-fire {
+    color: red; }
