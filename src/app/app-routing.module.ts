@@ -6,6 +6,8 @@ import { AreaComponent } from './area/area.component';
 import { StartComponent } from './start/start.component';
 import { TrekContentsComponent } from './trek-contents/trek-contents.component';
 import { RiverTrekStartComponent } from './river-trek-start/river-trek-start.component';
+import { RiverTrekContentsComponent } from './river-trek-contents/river-trek-contents.component';
+import { BackpackComponent } from './backpack/backpack.component';
 
 
 
@@ -17,6 +19,8 @@ const routes: Routes = [
   { path: 'contents' , component: TrekContentsComponent },
   { path: 'start' , component: StartComponent },
   { path: 'trek-start' , component: RiverTrekStartComponent },
+  { path: 'trek-content' , component: RiverTrekContentsComponent  },
+  { path: 'backpack' , component: BackpackComponent },
 
 ];
 @NgModule({
