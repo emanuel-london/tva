@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {AreaList} from '../area-list';
-import{AREAS} from '../areas'
+
 
 @Component({
   selector: 'app-area',
@@ -9,14 +8,6 @@ import{AREAS} from '../areas'
 })
 export class AreaComponent implements OnInit {
 
-area = AREAS;
-
-selectedArea: AreaList;
-
-onSelect(area: AreaList): void {
-  this.selectedAreaList = areaList;
-}
-test = "hello world"
 
   constructor() { }
 

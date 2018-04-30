@@ -4,7 +4,6 @@ import { RouterModule, Routes } from '@angular/router';
 import { LevelComponent } from './level/level.component';
 import { AreaComponent } from './area/area.component';
 import { StartComponent } from './start/start.component';
-import { StartComponent } from './trek-content/start.component';
 import { TrekContentsComponent } from './trek-contents/trek-contents.component';
 
 
@@ -12,15 +11,15 @@ import { TrekContentsComponent } from './trek-contents/trek-contents.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/level', pathMatch: 'full' },
-  { path: 'level', component: LevelComponent },
-  { path: 'choose', component: AreaComponent },
-  { path: 'start', component: StartComponent },
-  { path: 'contents', component: TrekContentsComponent },
+  { path: 'level' , component: LevelComponent },
+  { path: 'choose' , component: AreaComponent },
+  { path: 'start' , component: StartComponent },
+  { path: 'contents' , component: TrekContentsComponent },
 
 ];
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
     RouterModule.forRoot(routes),
   ],
 

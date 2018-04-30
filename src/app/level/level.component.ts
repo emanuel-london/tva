@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Levels } from '../levels';
-import { LEVELS } from '../imported-levels';
 
 @Component({
   selector: 'app-level',
@@ -10,11 +8,6 @@ import { LEVELS } from '../imported-levels';
 export class LevelComponent implements OnInit {
 
   constructor() { }
-levels = LEVELS;
-
-goBack(): void {
-  this.location.next();
-}
   ngOnInit() {
   }
 
