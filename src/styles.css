@@ -7339,7 +7339,7 @@ html, body {
   height: 100%; }
 
 body {
-  background: #2e98be url("/images/topo-overlay.png") bottom center no-repeat;
+  background: #2e98be url("images/topo-overlay.png") bottom center no-repeat;
   transition: 2s; }
 
 .overlay {
@@ -7352,19 +7352,19 @@ body {
   transition: 2s; }
 
 .overlay-sunny {
-  background-image: url("/images/overlay-sunny.png");
+  background-image: url("images/overlay-sunny.png");
   opacity: 0.5; }
 
 .overlay-partly-cloudy {
-  background-image: url("/images/overlay-partly-cloudy.jpg");
+  background-image: url("images/overlay-partly-cloudy.jpg");
   opacity: 0.5; }
 
 .overlay-cloudy {
-  background-image: url("/images/overlay-cloudy.jpg");
+  background-image: url("images/overlay-cloudy.jpg");
   opacity: 0.75; }
 
 .overlay-stars {
-  background-image: url("/images/overlay-stars-blur.jpg");
+  background-image: url("images/overlay-stars-blur.jpg");
   opacity: 0.9; }
 
 .welcome {
@@ -7490,7 +7490,7 @@ h3 {
     display: block; }
   .select-band .explorer a {
     padding-top: 110px;
-    background: url("/images/icon-tva.png") center 20px no-repeat;
+    background: url("images/icon-tva.png") center 20px no-repeat;
     background-size: 80px 80px;
     display: block; }
     .select-band .explorer a:after {
@@ -7502,7 +7502,7 @@ h3 {
       content: " "; }
   .select-band .tn-river a {
     padding-top: 110px;
-    background: url("/images/icon-river-trek.png") center 20px no-repeat;
+    background: url("images/icon-river-trek.png") center 20px no-repeat;
     background-size: 80px 80px; }
     .select-band .tn-river a:after {
       margin: auto;
@@ -7510,12 +7510,12 @@ h3 {
       display: block;
       width: 98px;
       height: 21.5px;
-      background: url("/images/icon-river-trek-shadow.png") bottom center no-repeat;
+      background: url("images/icon-river-trek-shadow.png") bottom center no-repeat;
       background-size: 98px 21.5px;
       content: " "; }
   .select-band .nuclear a {
     padding-top: 110px;
-    background: url("/images/icon-nuclear.png") center 20px no-repeat;
+    background: url("images/icon-nuclear.png") center 20px no-repeat;
     background-size: 80px 80px; }
     .select-band .nuclear a:after {
       margin: auto;
@@ -7523,12 +7523,12 @@ h3 {
       display: block;
       width: 98px;
       height: 21.5px;
-      background: url("/images/icon-nuclear-shadow.png") bottom center no-repeat;
+      background: url("images/icon-nuclear-shadow.png") bottom center no-repeat;
       background-size: 98px 21.5px;
       content: " "; }
   .select-band .wind a {
     padding-top: 110px;
-    background: url("/images/icon-wind.png") center 20px no-repeat;
+    background: url("images/icon-wind.png") center 20px no-repeat;
     background-size: 80px 80px; }
     .select-band .wind a:after {
       margin: auto;
@@ -7536,12 +7536,12 @@ h3 {
       display: block;
       width: 98px;
       height: 21.5px;
-      background: url("/images/icon-wind-shadow.png") bottom center no-repeat;
+      background: url("images/icon-wind-shadow.png") bottom center no-repeat;
       background-size: 98px 21.5px;
       content: " "; }
   .select-band .solar a {
     padding-top: 110px;
-    background: url("/images/icon-solar.png") center 20px no-repeat;
+    background: url("images/icon-solar.png") center 20px no-repeat;
     background-size: 80px 80px; }
     .select-band .solar a:after {
       margin: auto;
@@ -7549,7 +7549,7 @@ h3 {
       display: block;
       width: 98px;
       height: 21.5px;
-      background: url("/images/icon-solar-shadow.png") bottom center no-repeat;
+      background: url("images/icon-solar-shadow.png") bottom center no-repeat;
       background-size: 98px 21.5px;
       content: " "; }
   .select-band li a,
@@ -7599,17 +7599,17 @@ h3 {
         .select-band-contents li a span, .select-band-contents td a span {
           font-size: 90%; } }
   .select-band-contents .trek-contents a {
-    background-image: url("/images/icon-river-trek-contents.png"); }
+    background-image: url("images/icon-river-trek-contents.png"); }
   .select-band-contents .river-navigation a {
-    background-image: url("/images/icon-river-navigation.png"); }
+    background-image: url("images/icon-river-navigation.png"); }
   .select-band-contents .hydropower a {
-    background-image: url("/images/icon-hydropower.png"); }
+    background-image: url("images/icon-hydropower.png"); }
   .select-band-contents .watershed a {
-    background-image: url("/images/icon-watershed.png"); }
+    background-image: url("images/icon-watershed.png"); }
   .select-band-contents .history a {
-    background-image: url("/images/icon-history.png"); }
+    background-image: url("images/icon-history.png"); }
   .select-band-contents .water-withdrawal a {
-    background-image: url("/images/icon-water-withdrawal.png"); }
+    background-image: url("images/icon-water-withdrawal.png"); }
 
 .river-map .select-band-contents {
   padding: 0; }
@@ -7825,7 +7825,7 @@ img.compass {
 
 .white-popup {
   margin: 20px auto 20px auto;
-  background: url("/images/hydropower-bg.jpg") top center no-repeat;
+  background: url("images/hydropower-bg.jpg") top center no-repeat;
   background-size: cover;
   position: relative;
   width: auto;
@@ -7874,10 +7874,10 @@ img.compass {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25); }
 
 .acquatic-dialog {
-  background-image: url("/images/acquatic-bg.jpg"); }
+  background-image: url("images/acquatic-bg.jpg"); }
 
 .sturgeon-dialog {
-  background-image: url("/images/sturgeon-bg.jpg"); }
+  background-image: url("images/sturgeon-bg.jpg"); }
 
 #map {
   background: #207698;
