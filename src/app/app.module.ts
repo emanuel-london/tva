@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms'; // <-- NgModel lives here
+import { FormsModule } from '@angular/forms'; // <-- NgModel lives here\
+import { HttpModule } from '@angular/http';
 //import { JcfModule } from 'angular2-jcf-directive';
 import { SwiperModule } from 'ngx-swiper-wrapper';
 import { SWIPER_CONFIG } from 'ngx-swiper-wrapper';
@@ -42,6 +43,7 @@ const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
     // Custom Modules
    //JcfModule,
    SwiperModule,
+   HttpModule
 
   ],
   providers: [
