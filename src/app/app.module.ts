@@ -18,6 +18,8 @@ import { AppRoutingModule } from './/app-routing.module';
 import { StartComponent } from './start/start.component';
 import { TrekContentsComponent } from './trek-contents/trek-contents.component';
 import { RiverTrekStartComponent } from './river-trek-start/river-trek-start.component';
+import { RiverTrekContentsComponent } from './river-trek-contents/river-trek-contents.component';
+import { BackpackComponent } from './backpack/backpack.component';
 
 const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
   direction: 'horizontal',
@@ -34,6 +36,8 @@ const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
     StartComponent,
     TrekContentsComponent,
     RiverTrekStartComponent,
+    RiverTrekContentsComponent,
+    BackpackComponent,
 
   ],
   imports: [

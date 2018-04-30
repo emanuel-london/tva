@@ -7,6 +7,9 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" type= "text/css" href="bower_components/angular-ui-swiper/dist/angular-ui-swiper.css">
+   <script src="bower_components/angular-ui-swiper/dist/angular-ui-swiper.js"></script>
+
   <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
   <script
   src="https://code.jquery.com/jquery-3.3.1.min.js"
@@ -16,5 +19,44 @@
 </head>
 <body>
   <app-root></app-root>
+
+
+
+
+
+          <!--
+          ###############################
+          S C R I P T S
+          ###############################
+           -->
+           <script src="bower_components/wow/dist/wow.min.js"></script>
+                         <script>
+                         new WOW().init();
+                         </script>
+
+          <script type="text/javascript">
+              var swiper = new Swiper('.swiper-container', {
+                slidesPerView: 4,
+                spaceBetween: 10,
+                breakpoints: {
+                  // when window width is <= 320px
+                  320: {
+                    slidesPerView: 2,
+                    spaceBetween: 10
+                  },
+                  // when window width is <= 480px
+                  480: {
+                    slidesPerView: 2,
+                    spaceBetween: 10
+                  },
+                  // when window width is <= 640px
+                  768: {
+                    slidesPerView: 3,
+                    spaceBetween: 10
+                  }
+                }
+              });
+          </script>
+
 </body>
 </html>
