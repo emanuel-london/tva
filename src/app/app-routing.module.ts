@@ -5,6 +5,7 @@ import { LevelComponent } from './level/level.component';
 import { AreaComponent } from './area/area.component';
 import { StartComponent } from './start/start.component';
 import { TrekContentsComponent } from './trek-contents/trek-contents.component';
+import { RiverTrekStartComponent } from './river-trek-start/river-trek-start.component';
 
 
 
@@ -13,8 +14,9 @@ const routes: Routes = [
   { path: '', redirectTo: '/level', pathMatch: 'full' },
   { path: 'level' , component: LevelComponent },
   { path: 'choose' , component: AreaComponent },
-  { path: 'start' , component: StartComponent },
   { path: 'contents' , component: TrekContentsComponent },
+  { path: 'start' , component: StartComponent },
+  { path: 'trek-start' , component: RiverTrekStartComponent },
 
 ];
 @NgModule({
