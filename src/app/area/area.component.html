@@ -1,52 +1,52 @@
-<div class="overlay overlay-sunny" style="height: 964px;"></div>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="slider-container">
-          <div class="row">
-            <div class="slider-labels col-xs-12">
-                <a href="#" data-slider="1"><span class="icon pe-is-w-sun-1"></span></a>
-                <a href="#" data-slider="2"><span class="icon pe-is-w-partly-cloudy-1"></span></a>
-                <a href="#" data-slider="3"><span class="icon pe-is-w-mostly-cloudy-1"></span></a>
-                <a href="#" data-slider="4"><span class="icon pe-is-w-moon-1"></span></a>
+  <body class="choose">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="slider-container">
+            <div class="row">
+              <div class="slider-labels col-xs-12">
+                  <a href="#" data-slider="1"><span class="icon pe-is-w-sun-1"></span></a>
+                  <a href="#" data-slider="2"><span class="icon pe-is-w-partly-cloudy-1"></span></a>
+                  <a href="#" data-slider="3"><span class="icon pe-is-w-mostly-cloudy-1"></span></a>
+                  <a href="#" data-slider="4"><span class="icon pe-is-w-moon-1"></span></a>
+              </div>
+              <div id="slider"></div>
             </div>
-            <div id="slider" class="ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content"><span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 0%;"></span></div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="welcome animated fadeIn">
+            <h2>Choose one of the TVA areas to explore below.</h2>
           </div>
         </div>
       </div>
     </div>
-    <div class="row">
-      <div class="col-md-12">
-        <div class="welcome animated fadeIn">
-          <h2>Choose one of the TVA areas to explore below.</h2>
-        </div>
-      </div>
+    <div class="select-band animated fadeIn">
+      <ul class="list-inline container">
+        <li class="explorer"><a href="#" data-toggle="tooltip" data-placement="bottom" title="This module isn't available.<br> Please try the TN River Trek.">Explorer</a></li>
+        <li class="tn-river"><a routerLink="/contents" class="available">TN River Trek</a></li>
+        <li class="nuclear"><a href="#" data-toggle="tooltip" data-placement="bottom" title="This module isn't available.<br> Please try the TN River Trek.">Nuclear Experiment</a></li>
+        <li class="wind"><a href="#" data-toggle="tooltip" data-placement="bottom" title="This module isn't available.<br> Please try the TN River Trek.">Wind Farm Fly Over</a></li>
+        <li class="solar"><a href="#" data-toggle="tooltip" data-placement="bottom" title="This module isn't available.<br> Please try the TN River Trek.">Solar Power</a></li>
+      </ul>
     </div>
-  </div>
-  <div class="select-band animated fadeIn">
-    <ul class="list-inline container">
-      <li class="explorer"><a href="#" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="This module isn't available.<br> Please try the TN River Trek.">Explorer</a></li>
-      <li class="tn-river"><a routerLink="/contents" >TN River Trek</a></li>
-      <li class="nuclear"><a href="#" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="This module isn't available.<br> Please try the TN River Trek.">Nuclear Experiment</a></li>
-      <li class="wind"><a href="#" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="This module isn't available.<br> Please try the TN River Trek.">Wind Farm Fly Over</a></li>
-      <li class="solar"><a href="#" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="This module isn't available.<br> Please try the TN River Trek.">Solar Power</a></li>
-    </ul>
-  </div>
 
-  <div class="bottom-navigation">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-6">
-          <ul class="list-inline">
-            <li><strong>Current User</strong></li>
-            <li><a href="#">Log In</a></li>
-            <li><a href="#">Sign Up</a></li>
-          </ul>
-        </div>
-        <div class="col-sm-6">
-          <img src="dist/images/weather-elevation.png">
+    <div class="bottom-navigation">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6">
+            <ul class="list-inline">
+              <li><strong>Current User</strong></li>
+              <li><a href="#">Log In</a></li>
+              <li><a href="#">Sign Up</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-6">
+            <img src="dist/images/weather-elevation.png">
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <img src="dist/images/compass.png" class="compass animated slideInUp">
+    <img src="dist/images/compass.png" class="compass animated slideInUp">

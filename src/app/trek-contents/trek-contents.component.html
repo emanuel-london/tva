@@ -1,56 +1,52 @@
-<div class="select-band select-band-contents animated fadeIn">
-  <div class="table-responsive">
-    <table>
-      <tbody><tr>
-        <td class="trek-contents"><span><a href="http://contentscience.s3.amazonaws.com/tva/river/river-trek-start.html" class="available"><span><strong>Your River Trek Contents</strong></span></a></span></td>
-        <td class="river-navigation"><a href="http://contentscience.s3.amazonaws.com/tva/river/river-map.html" class="available"><span><strong>1.</strong> River Navigation</span></a></td>
-        <td class="hydropower"><a href="http://contentscience.s3.amazonaws.com/tva/river/river-map.html" class="available"><span><strong>2.</strong> Hydropower</span></a></td>
-        <td class="watershed"><a href="http://contentscience.s3.amazonaws.com/tva/river/river-map.html" class="available"><span><strong>3.</strong> Watershed Management</span></a></td>
-        <td class="history"><a href="http://contentscience.s3.amazonaws.com/tva/river/river-map.html" class="available"><span><strong>4.</strong> History &amp; Culture</span></a></td>
-        <td class="water-withdrawal"><a href="http://contentscience.s3.amazonaws.com/tva/river/river-map.html" class="available"><span><strong>5.</strong> Water Withdrawal</span></a></td>
-      </tr>
-    </tbody></table>
-  </div>
-</div>
-
-<div class="container trek-start-message">
-  <div class="row">
-    <div class="col-md-12">
-      <div class="welcome animated fadeIn">
-        <h2>Your TN River Trek Contents are provided above.<br> Select an option when you're ready to start.</h2>
-      </div>
-    </div>
-  </div>
-  <a href="http://contentscience.s3.amazonaws.com/tva/river/backpack.html"><img src="contents-trek_files/icon-backpack.png" class="backpack-icon"></a>
-</div>
-
-<div class="container">
-  <div class="row">
-    <div class="col-md-12 button-holder">
-      <div class="button animated fadeIn">
-        <a href="http://contentscience.s3.amazonaws.com/tva/river/backpack.html" class="btn btn-lg btn-start" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Backpack functionality isn't currently available in this prototype. Please try accessing one of the modules above.">Build a Backback</a>
-        <h3>You will probably want to build a backpack to carry
-essential items for your River Trek. If you get stuck, click the
-Backpack icon in the tab to your left and we can help you along.</h3>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="bottom-navigation">
+<body class="sparky bootstrap home">
   <div class="container">
     <div class="row">
-      <div class="col-sm-6">
-        <ul class="list-inline">
-          <li><strong>Current User</strong></li>
-          <li><a href="#">Log In</a></li>
-          <li><a href="#">Sign Up</a></li>
-        </ul>
+      <div class="col-md-12">
+        <div class="slider-container">
+          <div class="row">
+            <div class="slider-labels col-xs-12">
+                <a href="#" data-slider="1"><span class="icon pe-is-w-sun-1"></span></a>
+                <a href="#" data-slider="2"><span class="icon pe-is-w-partly-cloudy-1"></span></a>
+                <a href="#" data-slider="3"><span class="icon pe-is-w-mostly-cloudy-1"></span></a>
+                <a href="#" data-slider="4"><span class="icon pe-is-w-moon-1"></span></a>
+            </div>
+            <div id="slider"></div>
+          </div>
+        </div>
       </div>
-      <div class="col-sm-6">
-        <img src="contents-trek_files/weather-elevation.png">
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="animated fadeIn welcome">
+          <h2>The Tennessee River. It's just a river, right?</h2>
+          <h3>Maybe at first glance, but if you look a little bit closer, you will find that it is much more than just a river. It's a home. It's a business. It's a playground. It's a part of history, and it will be part of the future for the Tennessee Valley, the United States, and the world.</h3>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 button-holder">
+        <div class="button animated fadeIn">
+          <a href="river-trek-start.html" class="btn btn-lg btn-start">Start Your River Trek</a>
+          <h3 class="button-description">The Tennessee River has something for every explorer, and you can explore the Tennessee River many ways.</h3>
+        </div>
       </div>
     </div>
   </div>
-</div>
-<img src="contents-trek_files/compass.png" class="compass animated slideInUp">
+
+  <div class="bottom-navigation">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <ul class="list-inline">
+            <li><strong>Current User</strong></li>
+            <li><a href="#">Log In</a></li>
+            <li><a href="#">Sign Up</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-6">
+          <img src="dist/images/weather-elevation.png">
+        </div>
+      </div>
+    </div>
+  </div>
+  <img src="dist/images/compass.png" class="compass animated slideInUp">
