@@ -1,25 +1,10 @@
   <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="slider-container">
-          <div class="row">
-            <div class="slider-labels col-xs-12">
-                <a href="#" data-slider="1"><span class="icon pe-is-w-sun-1"></span></a>
-                <a href="#" data-slider="2"><span class="icon pe-is-w-partly-cloudy-1"></span></a>
-                <a href="#" data-slider="3"><span class="icon pe-is-w-mostly-cloudy-1"></span></a>
-                <a href="#" data-slider="4"><span class="icon pe-is-w-moon-1"></span></a>
-            </div>
-            <div id="slider"></div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <app-slider></app-slider>
     <div class="row">
       <div class="col-md-12">
         <div class="welcome">
-          <img src="images/mockingbird.png" class="wow fadeInDownBig" data-wow-duration="3s" data-wow-delay="1s">
-          <h4 class="hidden-xs hidden-sm"><strong>Welcome to TVA Explorer.</strong> Choose a brightness level in NE corner of the page and a learning level just South of "Explorer".</h4>
-          <h4 class="visible-xs visible-sm"><strong>Welcome to TVA Explorer.</strong> Choose a brightness level to the North and a learning level just South of "Explorer".</h4>
+          <img src="/images/mockingbird.png" class="wow fadeInDownBig" data-wow-duration="3s" data-wow-delay="1s">
+        <welcome-component></welcome-component>
         </div>
         <div class="wow fadeIn">
           <h1><strong>TVA</strong> Explorer</h1>
@@ -35,20 +20,5 @@
     </div>
   </div>
 
-  <div class="bottom-navigation">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-6">
-          <ul class="list-inline">
-            <li><strong>Current User</strong></li>
-            <li><a href="#">Log In</a></li>
-            <li><a href="#">Sign Up</a></li>
-          </ul>
-        </div>
-        <div class="col-sm-6">
-          <img src="images/weather-elevation.png">
-        </div>
-      </div>
-    </div>
-  </div>
+<usernav-component></usernav-component>
   <img src="images/compass.png" class="compass animated slideInUp">

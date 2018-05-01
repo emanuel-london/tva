@@ -5,7 +5,7 @@ import 'rxjs/add/operator/map';
 @Injectable()
 export class LevelsService {
   constructor(private http: Http) {
-    console.log("LevelsService initiated...");
+
   }
 
   getLevels() {

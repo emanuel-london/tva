@@ -1,20 +1,6 @@
   <body class="choose">
     <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="slider-container">
-            <div class="row">
-              <div class="slider-labels col-xs-12">
-                  <a href="#" data-slider="1"><span class="icon pe-is-w-sun-1"></span></a>
-                  <a href="#" data-slider="2"><span class="icon pe-is-w-partly-cloudy-1"></span></a>
-                  <a href="#" data-slider="3"><span class="icon pe-is-w-mostly-cloudy-1"></span></a>
-                  <a href="#" data-slider="4"><span class="icon pe-is-w-moon-1"></span></a>
-              </div>
-              <div id="slider"></div>
-            </div>
-          </div>
-        </div>
-      </div>
+          <app-slider></app-slider>
       <div class="row">
         <div class="col-md-12">
           <div class="welcome animated fadeIn">
@@ -24,29 +10,18 @@
       </div>
     </div>
     <div class="select-band animated fadeIn">
-      <ul class="list-inline container">
-        <li class="explorer"><a href="#" data-toggle="tooltip" data-placement="bottom" title="This module isn't available.<br> Please try the TN River Trek.">Explorer</a></li>
-        <li class="tn-river"><a routerLink="/contents" class="available">TN River Trek</a></li>
-        <li class="nuclear"><a href="#" data-toggle="tooltip" data-placement="bottom" title="This module isn't available.<br> Please try the TN River Trek.">Nuclear Experiment</a></li>
-        <li class="wind"><a href="#" data-toggle="tooltip" data-placement="bottom" title="This module isn't available.<br> Please try the TN River Trek.">Wind Farm Fly Over</a></li>
-        <li class="solar"><a href="#" data-toggle="tooltip" data-placement="bottom" title="This module isn't available.<br> Please try the TN River Trek.">Solar Power</a></li>
+      <ul class="list-inline container" *ngFor = "let area of areas">
+        <li *ngIf="area.name[0].value=='TN River Trek'" class="tn-river">
+          <a *ngIf="area.field_active_status[0].value=='no'" data-toggle="tooltip" data-placement="bottom" disabled="disabled" title="This module isn't available.">{{area.name[0].value}}</a>
+          <a *ngIf="area.field_active_status[0].value=='yes'" href="trek-start" data-toggle="tooltip" data-placement="bottom"  title="{{area.name[0].value}}">{{area.name[0].value}}</a>
+        </li>
+        <li *ngIf="area.name[0].value!=='TN River Trek'" class="{{area.name[0].value | lowercase }}">
+          <a *ngIf="area.field_active_status[0].value=='no'" data-toggle="tooltip" data-placement="bottom" disabled="disabled" title="This module isn't available.">{{area.name[0].value}}</a>
+          <a *ngIf="area.field_active_status[0].value=='yes'" href="trek-start" data-toggle="tooltip" data-placement="bottom"  title="{{area.name[0].value}}">{{area.name[0].value}}</a>
+        </li>
+
       </ul>
     </div>
 
-    <div class="bottom-navigation">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-6">
-            <ul class="list-inline">
-              <li><strong>Current User</strong></li>
-              <li><a href="#">Log In</a></li>
-              <li><a href="#">Sign Up</a></li>
-            </ul>
-          </div>
-          <div class="col-sm-6">
-            <img src="dist/images/weather-elevation.png">
-          </div>
-        </div>
-      </div>
-    </div>
+<usernav-component></usernav-component>
     <img src="dist/images/compass.png" class="compass animated slideInUp">
