@@ -1,20 +1,6 @@
 <div class="overlay overlay-sunny" style="height: 988px;"></div>
   <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="slider-container">
-          <div class="row">
-            <div class="slider-labels col-xs-12">
-              <a href="#" data-slider="1"><span class="icon pe-is-w-sun-1"></span></a>
-              <a href="#" data-slider="2"><span class="icon pe-is-w-partly-cloudy-1"></span></a>
-              <a href="#" data-slider="3"><span class="icon pe-is-w-mostly-cloudy-1"></span></a>
-              <a href="#" data-slider="4"><span class="icon pe-is-w-moon-1"></span></a>
-            </div>
-            <div id="slider" class="ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content"><span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 0%;"></span></div>
-          </div>
-        </div>
-      </div>
-    </div>
+      <app-slider></app-slider>
     <div class="row">
       <div class="col-md-12">
         <div class="welcome animated fadeIn">
@@ -22,19 +8,19 @@
         </div>
         <div class="form-group level-select level-select-trek row animated fadeIn">
           <div class="col-md-4 col-sm-6">
-            <label class="jcf-label-active"><span class="jcf-checkbox jcf-checked jcf-disabled"><span></span><input name="level" value="river-anatomy" checked="" disabled="" style="position: absolute; height: 100%; width: 100%; opacity: 0; margin: 0px;" type="checkbox"></span> River Anatomy</label><br>
-            <label class="jcf-label-active"><span class="jcf-checkbox jcf-checked jcf-disabled"><span></span><input name="level" value="navigation" checked="" disabled="" style="position: absolute; height: 100%; width: 100%; opacity: 0; margin: 0px;" type="checkbox"></span> Navigation</label><br>
-            <label><span class="jcf-checkbox jcf-unchecked"><span></span><input name="level" value="recreation" style="position: absolute; height: 100%; width: 100%; opacity: 0; margin: 0px;" type="checkbox"></span> Recreation</label>
-          </div>
+            <div  *ngFor = "let know of knows; let a = index">
+            <label *ngIf = "a < 3"><span class="jcf-checkbox"><span></span><input name="level" value="river-anatomy" checked="" disabled="" style="position: absolute; height: 100%; width: 100%; opacity: 0; margin: 0px;" type="checkbox"></span> {{know.name[0].value}}</label>
+</div>
+</div>
           <div class="col-md-4 col-sm-6">
-            <label class="jcf-label-active"><span class="jcf-checkbox jcf-checked jcf-disabled"><span></span><input name="level" value="wastershed-management" checked="" disabled="" style="position: absolute; height: 100%; width: 100%; opacity: 0; margin: 0px;" type="checkbox"></span> Watershed Management</label><br>
-            <label class="jcf-label-active"><span class="jcf-checkbox jcf-checked jcf-disabled"><span></span><input name="level" value="hydropower" checked="" disabled="" style="position: absolute; height: 100%; width: 100%; opacity: 0; margin: 0px;" type="checkbox"></span> Hydropower</label><br>
-            <label class="jcf-label-active"><span class="jcf-checkbox jcf-checked jcf-disabled"><span></span><input name="level" value="history" checked="" disabled="" style="position: absolute; height: 100%; width: 100%; opacity: 0; margin: 0px;" type="checkbox"></span> History</label>
-          </div>
+            <div  *ngFor = "let know of knows; let b = index">
+<label *ngIf = "b > 2 && b < 6"><span class="jcf-checkbox"><span></span><input name="level" value="river-anatomy" checked="" disabled="" style="position: absolute; height: 100%; width: 100%; opacity: 0; margin: 0px;" type="checkbox"></span> {{know.name[0].value}}</label>
+</div>
+</div>
           <div class="col-md-4 col-sm-6">
-            <label><span class="jcf-checkbox jcf-unchecked"><span></span><input name="level" value="habitats" style="position: absolute; height: 100%; width: 100%; opacity: 0; margin: 0px;" type="checkbox"></span> Habitats</label><br>
-            <label><span class="jcf-checkbox jcf-unchecked"><span></span><input name="level" value="biodiversity" style="position: absolute; height: 100%; width: 100%; opacity: 0; margin: 0px;" type="checkbox"></span> Biodiversity</label>
-          </div>
+            <div  *ngFor = "let know of knows; let c = index">
+<label *ngIf = "c > 5"><span class="jcf-checkbox"><span></span><input name="level" value="river-anatomy" checked="" disabled="" style="position: absolute; height: 100%; width: 100%; opacity: 0; margin: 0px;" type="checkbox"></span> {{know.name[0].value}}</label>
+</div>
         </div>
       </div>
     </div>
@@ -48,20 +34,5 @@
     </div>
   </div>
 
-    <div class="bottom-navigation">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-6">
-            <ul class="list-inline">
-              <li><strong>Current User</strong></li>
-              <li><a href="#">Log In</a></li>
-              <li><a href="#">Sign Up</a></li>
-            </ul>
-          </div>
-          <div class="col-sm-6">
-            <img src="dist/images/weather-elevation.png">
-          </div>
-        </div>
-      </div>
-    </div>
+<usernav-component></usernav-component>
     <img src="dist/images/compass.png" class="compass animated slideInUp">
