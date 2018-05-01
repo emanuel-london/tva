@@ -8,7 +8,7 @@ export class KnowledgeService {
   }
 
   getKnows() {
-    return this.http.get('http://tva.local/tva-services/knowledge-area?_format=json')
+    return this.http.get('http://dev-tennessee-river-valley.pantheonsite.io/tva-services/knowledge-area?_format=json')
     .map(res => res.json());
   }
 }

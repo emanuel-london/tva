@@ -9,7 +9,7 @@ export class LevelsService {
   }
 
   getLevels() {
-    return this.http.get('http://tva.local/tva-services/level-menu?_format=json')
+    return this.http.get('http://dev-tennessee-river-valley.pantheonsite.io/tva-services/level-menu?_format=json')
     .map(res => res.json());
   }
 }

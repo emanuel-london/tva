@@ -8,7 +8,7 @@ export class AreasService {
   }
 
   getAreas() {
-    return this.http.get('http://tva.local/tva-services/tva-area?_format=json')
+    return this.http.get('http://dev-tennessee-river-valley.pantheonsite.io/tva-services/tva-area?_format=json')
     .map(res => res.json());
   }
 }
