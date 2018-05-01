@@ -13,9 +13,6 @@ export class WelcomeComponent implements OnInit {
   constructor(private welcomeService: WelcomeService) {
   }
   ngOnInit() : void {
-    this.welcomeService.getWelcome().subscribe(welcome =>
-    {
-      this.welcome = welcome;
-    });
+    this.welcomeService.getWelcome().subscribe(welcome => this.welcome = welcome;);
   }
 }

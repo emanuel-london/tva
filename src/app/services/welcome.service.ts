@@ -9,7 +9,6 @@ import { WelcomeContent } from './welcome';
 export class WelcomeService {
    private _welcomeurl = 'http://dev-tennessee-river-valley.pantheonsite.io/tva-services/welcome?_format=json';
    constructor(private _http: Http){
-     this.getWelcome();
    }
 
    getWelcome(): Observable<WelcomeContent[]> {
