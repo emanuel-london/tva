@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
+
 
 @Component({
   selector: 'app-backpack',
@@ -7,9 +9,5 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BackpackComponent implements OnInit {
 
-  constructor() { }
-
-  ngOnInit() {
-  }
 
 }

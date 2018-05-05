@@ -4,6 +4,7 @@ import { SliderComponent } from '../components/slider/slider.component';
 import { UserNavComponent } from '../components/usernav/usernav.component';
 import { WelcomeComponent } from '../components/welcome/welcome.component';
 
+
 @Component({
   moduleId: module.id,
   selector: 'app-level',
@@ -21,6 +22,7 @@ export class LevelComponent implements OnInit {
   }
   ngOnInit() {
   }
+
 }
 interface Levels {
   name: DrupalArray[];
