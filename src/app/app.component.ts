@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
 import { Http , Response } from '@angular/http';
-import 'rxjs/add/operator/map';
+ import { WOW } from 'wowjs/dist/wow.min';
 
 
+ 
 @Component({
   moduleId: module.id,
   selector: 'app-root',
@@ -12,4 +13,9 @@ import 'rxjs/add/operator/map';
 })
 export class AppComponent {
   title = 'app';
+
+  class ngAfterViewInit(){
+
+    new WOW().init();
+  }
 }
