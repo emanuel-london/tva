@@ -13,6 +13,8 @@ export class WelcomeComponent implements OnInit {
 
   ngOnInit()   :void {
 
+
   this.welcomeService.getWelcome().subscribe(welcome => this.welcome = welcome;);}
+
 
 }

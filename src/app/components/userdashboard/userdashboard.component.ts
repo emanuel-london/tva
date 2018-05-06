@@ -1,14 +1,16 @@
+
 import { Component, ViewChild, OnInit } from '@angular/core';
 import { SwiperComponent, SwiperDirective, SwiperConfigInterface,
   SwiperScrollbarInterface, SwiperPaginationInterface } from 'ngx-swiper-wrapper';
+
 
 @Component({
   selector: 'user-dashboard',
   templateUrl: './userdashboard.component.html',
 })
 export class UserDashboard implements OnInit {
-  OnInit() {
-  }
+
+  OnInit() {}
 
   public show: boolean = true;
   public type: string = 'component';

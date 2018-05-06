@@ -1,5 +1,4 @@
 import { BrowserModule } from '@angular/platform-browser';
-import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms'; // <-- NgModel lives here\
 import { ReactiveFormsModule } from '@angular/forms'; //<--- Reactive Forms--->
@@ -11,9 +10,7 @@ import { SwiperConfigInterface } from 'ngx-swiper-wrapper';
 import { trigger, transition, useAnimation } from '@angular/animations';
 import { bounce } from 'ng-animate';
 import { AppRoutingModule } from './app-routing.module';
-import { SwiperModule } from 'ngx-swiper-wrapper';
-import { SWIPER_CONFIG } from 'ngx-swiper-wrapper';
-import { SwiperConfigInterface } from 'ngx-swiper-wrapper';
+
 const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
   slidesPerView: 4,
   spaceBetween: 10,
@@ -59,7 +56,6 @@ import { MapBoxComponent } from './components/map-box/map-box.component';
 //import {MapService} from './services/map.service';
 //import {GeocodingService} from './services/geocoding.service';
 
-import { NgxMapboxGLModule } from 'ngx-mapbox-gl';
 
 
 @NgModule({
@@ -90,7 +86,6 @@ import { NgxMapboxGLModule } from 'ngx-mapbox-gl';
     // Custom Modules
     JcfModule,
    SwiperModule,
-  ReactiveFormsModule,
    HttpModule,
   SwiperModule,
   NgxMapboxGLModule.forRoot({

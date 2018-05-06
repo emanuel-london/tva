@@ -8,7 +8,9 @@ import { WelcomeContent } from './welcome';
 @Injectable()
 export class WelcomeService {
    private _welcomeurl = 'http://dev-tennessee-river-valley.pantheonsite.io/tva-services/welcome?_format=json';
+
    constructor(private _http: Http){} 
+
 
    getWelcome(): Observable<WelcomeContent[]> {
       return this._http.get(this._welcomeurl)
