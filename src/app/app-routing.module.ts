@@ -8,6 +8,7 @@ import { TrekContentsComponent } from './trek-contents/trek-contents.component';
 import { RiverTrekStartComponent } from './river-trek-start/river-trek-start.component';
 import { RiverTrekContentsComponent } from './river-trek-contents/river-trek-contents.component';
 import { BackpackComponent } from './backpack/backpack.component';
+import { MapBoxComponent } from './components/map-box/map-box.component';
 
 
 
@@ -21,6 +22,7 @@ const routes: Routes = [
   { path: 'trek-start' , component: RiverTrekStartComponent },
   { path: 'trek-content' , component: RiverTrekContentsComponent  },
   { path: 'backpack' , component: BackpackComponent },
+  { path: 'map' , component: MapBoxComponent },
 
 ];
 @NgModule({

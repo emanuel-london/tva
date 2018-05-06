@@ -10,9 +10,10 @@ import { WelcomeContent } from '../../services/welcome';
 })
 export class WelcomeComponent implements OnInit {
   welcome: WelcomeContent[];
-  constructor(private welcomeService: WelcomeService) {
+  constructor (private welcomeService: WelcomeService) {}
+
+  ngOnInit()   :void {
+    this.welcomeService.getWelcome().subscribe(welcome => this.welcome = welcome);
   }
-  ngOnInit() : void {
-    this.welcomeService.getWelcome().subscribe(welcome => this.welcome = welcome;);
-  }
+
 }
