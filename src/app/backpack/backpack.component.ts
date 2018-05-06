@@ -1,4 +1,6 @@
+
 import { Component, OnInit, ViewChild } from '@angular/core';
+
 
 
 @Component({
@@ -6,7 +8,8 @@ import { Component, OnInit, ViewChild } from '@angular/core';
   templateUrl: './backpack.component.html',
   styleUrls: ['./backpack.component.css']
 })
-export class BackpackComponent {
+
+export class BackpackComponent implements OnInit {
 
 
 }

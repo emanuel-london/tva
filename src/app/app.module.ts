@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms'; // <-- NgModel lives here\
+import { ReactiveFormsModule } from '@angular/forms'; //<--- Reactive Forms--->
 import { HttpModule } from '@angular/http';
 import { JcfModule } from 'angular2-jcf-directive';
 import { SwiperModule } from 'ngx-swiper-wrapper';
@@ -56,7 +56,7 @@ import { MapBoxComponent } from './components/map-box/map-box.component';
 //import {MapService} from './services/map.service';
 //import {GeocodingService} from './services/geocoding.service';
 
-import { NgxMapboxGLModule } from 'ngx-mapbox-gl';
+
 
 @NgModule({
   declarations: [

@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
 import { Http , Response } from '@angular/http';
-import { WOW } from 'wowjs/dist/wow.min';
+
 
 @Component({
   moduleId: module.id,
@@ -12,7 +12,5 @@ import { WOW } from 'wowjs/dist/wow.min';
 export class AppComponent {
   title = 'app';
 
-  ngAfterViewInit(){
-    new WOW().init();
-  }
+
 }

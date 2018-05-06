@@ -6,14 +6,15 @@ import { WelcomeContent } from '../../services/welcome';
   moduleId: module.id,
   selector: 'welcome-component',
   templateUrl: 'welcome.component.html',
-  providers: [WelcomeService]
-})
+  providers: [WelcomeService]})
 export class WelcomeComponent implements OnInit {
   welcome: WelcomeContent[];
   constructor (private welcomeService: WelcomeService) {}
 
   ngOnInit()   :void {
-    this.welcomeService.getWelcome().subscribe(welcome => this.welcome = welcome);
-  }
+
+
+  this.welcomeService.getWelcome().subscribe(welcome => this.welcome = welcome;);}
+
 
 }
