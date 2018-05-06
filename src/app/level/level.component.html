@@ -10,11 +10,11 @@
           <h1><strong>TVA</strong> Explorer</h1>
         </div>
         <div class="form-group level-select">
-          <label  *ngFor = "let level of levels"><input type="radio" name="level" value="{{level.name[0].value}}" jcf> &nbsp;&nbsp;{{level.name[0].value}}</label>
+          <label  *ngFor = "let level of levels | async"><input type="radio" name="level" value="{{level.name[0].value}}" jcf> &nbsp;&nbsp;{{level.name[0].value}}</label>
 
         </div>
         <div class="button wow fadeIn">
-          <a routerLink="/choose" class="btn btn-lg btn-start">Choose Your Level</a>
+          <a (click)="select(levels)" class="btn btn-lg btn-start">Choose Your Level</a>
         </div>
       </div>
     </div>

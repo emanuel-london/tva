@@ -4,7 +4,7 @@ import { Http , Response } from '@angular/http';
  import { WOW } from 'wowjs/dist/wow.min';
 
 
- 
+
 @Component({
   moduleId: module.id,
   selector: 'app-root',
@@ -14,8 +14,4 @@ import { Http , Response } from '@angular/http';
 export class AppComponent {
   title = 'app';
 
-  class ngAfterViewInit(){
-
-    new WOW().init();
-  }
 }
